@@ -3,12 +3,12 @@ public class Main {
 
         ArquivoOriginal meuArquivo = new ArquivoOriginal();
 
-        InterfaceSistemaRH rh = new AdapterRH(meuArquivo);
-        rh.processarDadosRH();
+        InterfaceSistemaInternacional rh = new AdapterInternacional(meuArquivo);
+        rh.exibirDadosInternacionais();
 
         System.out.println();
 
-        InterfaceSistemaMarketing mkt = new AdapterMarketing(meuArquivo);
-        mkt.publicarConteudo();
+        InterfaceSistemaEngenharia mkt = new AdapterEngenharia(meuArquivo);
+        mkt.exibirDadosTecnicos();
     }
 }

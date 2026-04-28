@@ -1,8 +1,6 @@
-// Arquivo: ArquivoOriginal.java
 public class ArquivoOriginal {
     public String nome = "João Silva";
-    public String sexo = "Masculino";
-    public String cpf = "123.456.789-00";
-    public String cidade = "Fortaleza";
-    public int idade = 30;
+    public double distanciaMetros = 5.0;    // base: metros
+    public double pesoKg = 75.0;            // base: kg
+    public double tempCelsius = 100.0;      // base: Celsius
 }
