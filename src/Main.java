@@ -1,14 +1,15 @@
 public class Main {
     public static void main(String[] args) {
+        BibliotecaAnalises bibliotecajson = new XmlParaJsonAdapter();
+        BibliotecaAnalises bibliotecabinario = new XmlParaBinarioAdapter();
+        FornecedorDados xml = new FornecedorDados();
 
-        ArquivoOriginal meuArquivo = new ArquivoOriginal();
+        System.out.println("=== ANTES (XML) ===");
+        System.out.println(xml);
 
-        InterfaceSistemaInternacional rh = new AdapterInternacional(meuArquivo);
-        rh.exibirDadosInternacionais();
+        bibliotecajson.analisar();
 
-        System.out.println();
+        bibliotecabinario.analisar();
 
-        InterfaceSistemaEngenharia mkt = new AdapterEngenharia(meuArquivo);
-        mkt.exibirDadosTecnicos();
     }
 }
