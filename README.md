@@ -9,7 +9,7 @@ O **Adapter** é um padrão de projeto estrutural que permite que objetos com in
 ### Componentes do Padrão:
 
 * **Client :** É quem utiliza o serviço. Ele não conhece os detalhes da implementação, apenas chama os métodos definidos na Interface.
-* **Target/Interface :** É o "molde" ou contrato. Ela define **o que** o sistema precisa, mas não como fazer.
+* **Target/Interface :** É o "molde" ou contrato. Ela define **o que** o sistema precisa.
 * **Adaptee :** É o sistema antigo ou de terceiros que queremos usar. Ele contém os dados ou metodos, mas sua "língua" é incompatível com o que o Cliente espera.
 * **Adapter :** A peça chave. Ele implementa a Interface e "envolve" o Adaptee, conectando os dados brutos para o formato desejado dentro do método de análise.
  
@@ -19,7 +19,7 @@ O **Adapter** é um padrão de projeto estrutural que permite que objetos com in
 ### Componentes do Padrão no projeto:
 
 * **Client (A `Main`):** É quem apenas chama os métodos definidos na Interface.
-* **Target (A Interface `BibliotecaAnalises`):** É o "molde" ou contrato. Ela define **o que** o sistema precisa (ex: `analisar()`), mas não como fazer.
+* **Target (A Interface `BibliotecaAnalises`):** É o "molde" ou contrato. Ela define **o que** o sistema precisa (ex: `analisar()`).
 * **Adaptee (O `FornecedorDados`):** É o sistema antigo ou de terceiros que queremos usar. Ele contém os dados (XML), mas sua "língua" é incompatível com o que o Cliente espera.
 * **Adapter (O `XmlParaJsonAdapter`):** A peça chave. Ele implementa a Interface e "envolve" o Adaptee, convertendo os dados brutos (XML) para o formato desejado (JSON/Binário) dentro do método de análise.
 
